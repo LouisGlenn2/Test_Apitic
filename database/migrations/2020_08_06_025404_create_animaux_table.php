@@ -13,7 +13,7 @@ class CreateAnimauxTable extends Migration
      */
     public function up()
     {
-          Schema::create('animals', function (Blueprint $table) {
+          Schema::create('pets', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name', 100);
             $table->string('type', 100);
@@ -30,6 +30,6 @@ class CreateAnimauxTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('animaux');
+        Schema::dropIfExists('pets');
     }
 }
