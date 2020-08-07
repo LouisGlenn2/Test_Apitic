@@ -77,7 +77,7 @@
 
                         <div>
                             <p class="label">Description de l'animal (1 à 100 caractères) : </p>
-                            <input type="text" name="description" placeholder="Décrivez le" min="1" max="100">
+                            <input type="text" name="description" placeholder="Décrivez-le" min="1" max="100">
                         </div>
                     </div>
                     <input class="button" type="submit" value="Ajouter">
