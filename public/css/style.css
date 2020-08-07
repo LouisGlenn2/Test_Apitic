@@ -1,0 +1,192 @@
+header,
+h1 {
+    background-color: #696969;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 100%;
+    color: white;
+    text-align: center
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+/*Taille des images de la légende*/
+.imgLegende {
+    width: 20px;
+    height: 20px;
+}
+/*Placement en ligne des figcaptions et des images*/
+#legende,
+figure {
+    display: inline-flex;
+    font-size: 15px;
+    margin-left: 30%;
+}
+/*Espacement entre l'image et le figcaption*/
+figcaption {
+    margin-left: 3px;
+}
+/*Style générale du tableau*/
+#petTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 700px;
+    margin-left: 32%;
+}
+/*Style des colonnes et des entêtes*/
+#petTable td,
+#petTable th {
+    border-top: 1px solid #696969;
+    padding: 8px;
+}
+/*Style des entêtes*/
+#petTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #696969;
+    color: white;
+}
+/*Style des boutons*/
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 20px;
+    margin-left: 38%;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 200px;
+}
+/*Style des boutons placés en bas du tableau et dans la page update.php*/
+.buttonDuBas{
+     background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 200px;
+    margin-left: 44%;
+}
+/*Alignement des trois boutons au dessus du tableau*/
+#block_button{
+    display: inline-flex;
+    margin-left: 28%;
+}
+/*Style des $pet->name*/
+.name {
+    font-weight: bold;
+}
+/*Style des boutons placés dans le tableau*/
+.tableButton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 8em;
+}
+/*Style de la pop up permettant l'ajout d'un animal*/
+#ajoutAnimal h2,
+.modal-header {
+    background-color: #696969;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 100%;
+    color: white;
+    text-align: center
+}
+/*Style des boutons effacer et annuler*/
+#deleteButton,
+#cancelButton{
+    background-color: #B22222;
+}
+/*Placement des formulaires*/
+.form{
+    margin-left: 32%;
+}
+/*Style des input*/
+input[type=text]{
+    width: 50%;
+    padding: 12px 20px;display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/*Style des erreurs*/
+.error {
+    list-style-type: none;
+    margin-left: 41%;
+    color: white;
+    background-color: red;
+    width: 250px;
+    text-align: center;
+  
+}
+/*Style des paragraphes qui servent d'entête aux differents input*/
+.label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/*Background du modal*/
+.modal,
+.modalSupp {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*Contenu du modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/*Style du bouton fermer dans la popup*/
+.close,
+.closeSupp {
+    color: #aaaaaa;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+}
